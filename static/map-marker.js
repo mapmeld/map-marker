@@ -24,7 +24,7 @@ $(function() {
       x.find('way').each(function(w, way) {
         way = $(way);
         var waypts = [];
-        if (way.find('tag[v="highway"]')) {
+        if (way.find('tag[k="highway"]').length) {
           var nodes = way.find('nd');
           nodes.each(function(n, node) {
             node = $(node);
@@ -32,7 +32,7 @@ $(function() {
             var original = x.find('node[id="' + ref + '"]');
             waypts.push(L.latLng(original.attr('lat') * 1, original.attr('lon') * 1));
           });
-          lastpicked.push(L.polyline(waypts).addTo(map));
+          lastpicked.push(L.polyline(waypts, { weight: 3 }).addTo(map));
         }
       });
     });
