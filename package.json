@@ -1,0 +1,25 @@
+{
+  "name": "map-marker-proxy",
+  "version": "1.0.0",
+  "description": "Select one of the roads in my geolocation (or a clicked area) to mark with a blocker ball.",
+  "main": "map-marker.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapmeld/map-marker.git"
+  },
+  "author": "Nick Doiron <ndoiron@mapmeld.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mapmeld/map-marker/issues"
+  },
+  "homepage": "https://github.com/mapmeld/map-marker#readme"
+}
